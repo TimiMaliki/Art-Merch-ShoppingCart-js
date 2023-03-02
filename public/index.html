@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body class="">
+    <div class="content-wrapper">
+      <div class="grid-section  grid md:grid-cols-3">
+        <!-----profile section----->
+        <div class="profile  md:col-span-1  min-h-screen">
+          <div class="bg-slate-400">
+            <div class="profile-pic lg:inline-block">
+                <div class="flex gap-10">
+                  <img src="./assets/img/a-l-moheR9rdRGY-unsplash.jpg" alt="" class="profile-text w-36 h-36 rounded-full mt-8">
+                <h2 class="mt-12 text-gray-500 md:text-2xl font-bold">Profile <br>Timi Maliki</h2>
+            </div>
+            <!------------thin border line------------->
+            <div class="border-b lg:border-grey-400  mt-12"></div>
+            <!----------------Functionalities------------>
+            <div class="other mt-12 flex  min-h-screen">
+                <ul class="">
+                    <li class="flex  ml-11 mb-10 ">
+                        <svg class="w-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 
+                24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+                            <path strokeLinecap="round" strokeLinejoin="round"
+                                d="M6.75 3v2.25M17.25
+                     3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5" />
+                        </svg>
+                        <a href="#">Edit</a>
+                    </li>
+                    <li class="flex  ml-11 mb-10">
+                        <svg class="w-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 
+                    24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+                            <path strokeLinecap="round" strokeLinejoin="round"
+                                d="M6.75 3v2.25M17.25
+                         3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5" />
+                        </svg>
+                        <a href="#">Password</a>
+                    </li>
+                    <li class="flex  ml-11 mb-10">
+                        <svg class="w-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 
+                    24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+                            <path strokeLinecap="round" strokeLinejoin="round"
+                                d="M6.75 3v2.25M17.25
+                         3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5" />
+                        </svg>
+                        <a href="#">Privacy</a>
+                    </li>
+                    <li class="flex  ml-11 mb-10">
+                        <svg class="w-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 
+                    24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+                            <path strokeLinecap="round" strokeLinejoin="round"
+                                d="M6.75 3v2.25M17.25
+                         3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5" />
+                        </svg>
+                        <a href="#">Settings</a>
+                    </li>
+                </ul>
+            </div>
+            </div>
+          </div>
+        </div>
+<!---------grid section------>
+<div class="task  md:col-span-2 min-h-screen  ">
+ <header>
+  <h1 class="font-bold flex justify-center text-2xl mt-12">Task List</h1>
+  <form id="new-task-form">
+    <div class="flex justify-center mt-12">
+       <input type="text" id="new-task-input" placeholder="What's your plan" class="mt-12 border border-gray-500 rounded-full w-1/2" > 
+       <button class="edit mt-12 rounded-full border w-28 " value="Add Task" id="new-task-submit">Add task</button>
+      </div>
+  </form>
+ </header>
+
+ <main>
+  <section class="task-list ">
+    <h2 class="font-bold flex justify-center text-2xl mt-12">Tasks</h2>
+    <div id="tasks">
+      <div class="task">
+        
+        <!-----
+        <div class="content">
+          <input type="text" class="text  task  flex mt-12 rounded-full border w-full text-center" value="my task" readonly>
+
+        </div>
+        <div class="action flex justify-center gap-20">
+          <button class="edit mt-12 rounded-full border w-28 ">Edit</button>
+          <button class="delete mt-12 rounded-full border w-28">Delete</button>
+        </div>
+      </div >
+--->
+    </div>
+
+  </section>
+ </main>
+  </div>
+
+</div>
+
+ 
+
+</div>
+  </div>
+
+   
+
+
+
+   
+
+</div>
+
+  <script src="../src/main.js"></script>
+
+</body>
+
+</html>
