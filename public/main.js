@@ -1,3 +1,4 @@
+/*
 window.addEventListener('load', () =>{
     const form = document.querySelector('#new-task-form');
     const input = document.querySelector('#new-task-input');
@@ -71,3 +72,11 @@ window.addEventListener('load', () =>{
         })
     })
 })
+
+*/
+
+const inputBox = document.querySelectorAll('.inputbox');
+const genderSel = document.querySelectorAll('.gender-sel ');
+
+
+console.log(inputBox , genderSel)
