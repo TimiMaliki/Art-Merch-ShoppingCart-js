@@ -77,6 +77,11 @@ window.addEventListener('load', () =>{
 
 const inputBox = document.querySelectorAll('.inputbox');
 const genderSel = document.querySelectorAll('.gender-sel ');
+const registerBtn = document.querySelector('.register ');
 
 
 console.log(inputBox , genderSel)
+
+registerBtn.addEventListener('click' , () =>{
+    alert("i'm done")
+})
