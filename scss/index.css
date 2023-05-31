@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background: #000;
+  color: #fff;
+}
+
+.search__input {
+  width: 45%;
+  height: 30px;
+  padding: 6px 11px;
+  margin-top: 10px;
+  border-radius: 4px;
+  background-color: #f4f4f4;
+  transition: transform 150ms ease-in-out;
+}
+.search__input::-moz-placeholder {
+  color: color(#575756 a(0.8));
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+.search__input::placeholder {
+  color: color(#575756 a(0.8));
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+.search__input:hover, .search__input:focus {
+  padding: 2px 0;
+  outline: 0;
+  border: none;
+  border-bottom: 1px solid #575756;
+  border-radius: 0;
+  background-position: 100% center;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+}
+nav .logo {
+  padding: 35px;
+}
+nav .right {
+  display: flex;
+  justify-content: space-between;
+  padding: 25px;
+  gap: 3rem;
+}
+nav .right .sub {
+  border: 1px solid #f5f5f5;
+  border-radius: 25px;
+  width: 110px;
+  height: 25px;
+  margin-top: 5px;
+  padding: 20px;
+}
+nav .right .sub p {
+  margin-top: -10px;
+  font-size: 18px;
+}
+nav .right .sub:hover {
+  background-color: rgb(240, 18, 240);
+}
+nav .right .log {
+  margin-top: 15px;
+  font-size: 21px;
+  width: 100px;
+}
+nav .right .log:hover {
+  color: rgb(98, 98, 245);
+}
+nav ul {
+  display: flex;
+  list-style: none;
+  width: 50%;
+}
+nav ul li {
+  text-decoration: none;
+  padding: 39px;
+  cursor: pointer;
+}
+nav ul li:hover {
+  color: #333;
+  transition: all 0.5s;
+}
+
+main .main_container {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../assets/img/background_imagies/Property\ 1=movie\ 1.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 500px;
+}
+
+.latest {
+  width: 100%;
+  height: 70vh;
+  margin-top: 50px;
+}
+.latest .latest_text {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 48rem;
+  font-size: 21px;
+  cursor: pointer;
+}
+.latest .trend_col {
+  width: 100%;
+  height: 40vh;
+  margin-top: 50px;
+  display: flex;
+  gap: 2rem;
+}
+.latest .trend_col .col {
+  padding: 0px 50px;
+}
+.latest .trend_col img {
+  width: 100%;
+  height: 170px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+footer {
+  display: grid;
+  justify-content: center;
+  margin-top: 40vh;
+  margin-bottom: 9rem;
+}
+footer .socials {
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+}
+footer .policies {
+  display: flex;
+  margin-top: 20px;
+  gap: 4rem;
+}
+footer .copyright {
+  margin-left: 10rem;
+  margin-top: 10px;
+}/*# sourceMappingURL=index.css.map */
