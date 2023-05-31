@@ -147,4 +147,10 @@ footer .policies {
 footer .copyright {
   margin-left: 10rem;
   margin-top: 10px;
+}
+
+@media (max-width: 330) {
+  body {
+    background: #fff;
+  }
 }/*# sourceMappingURL=index.css.map */
