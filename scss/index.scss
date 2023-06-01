@@ -4,7 +4,7 @@
 //   'desktop': 1024px,
 // );
 
-@import  '../node_modules/include-media/dist/_include-media.scss';
+@import  '../scss/breakpoints.scss';
 
 $general_color: #000;
 
@@ -20,11 +20,11 @@ body {
     background: $general_color;
     color: #fff;
  
-    @include media("<=phone") {
-        body{
-            background:red;
-        }
+  @include media("<=phone"){
+    body{
+        background-color: blue;
     }
+  }
 }
 
 .search__input {

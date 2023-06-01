@@ -12,7 +12,7 @@ body {
 }
 @media (max-width: 320px) {
   body body {
-    background: red;
+    background-color: blue;
   }
 }
 
