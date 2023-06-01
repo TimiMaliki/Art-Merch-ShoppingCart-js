@@ -12,10 +12,7 @@ body {
 }
 @media (max-width: 320px) {
   body body {
-    background-color: red;
-  }
-  body nav {
-    visibility: hidden;
+    background: red;
   }
 }
 
