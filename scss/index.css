@@ -1,3 +1,4 @@
+@import url(./breakpoints.scss);
 * {
   margin: 0;
   padding: 0;
@@ -30,14 +31,6 @@ body {
   text-transform: uppercase;
   letter-spacing: 1.5px;
 }
-.search__input:hover, .search__input:focus {
-  padding: 2px 0;
-  outline: 0;
-  border: none;
-  border-bottom: 1px solid #575756;
-  border-radius: 0;
-  background-position: 100% center;
-}
 
 nav {
   display: flex;
@@ -59,6 +52,7 @@ nav .right .sub {
   height: 25px;
   margin-top: 5px;
   padding: 20px;
+  transition: all 0.5s;
 }
 nav .right .sub p {
   margin-top: -10px;
@@ -66,6 +60,7 @@ nav .right .sub p {
 }
 nav .right .sub:hover {
   background-color: rgb(240, 18, 240);
+  transition: all ease-in-out 0.5s;
 }
 nav .right .log {
   margin-top: 15px;
@@ -91,7 +86,7 @@ nav ul li:hover {
 }
 
 main .main_container {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../assets/img/background_imagies/Property\ 1=movie\ 1.png);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../assets/img/background_imagies/Property\ 1=movie\ 2.png);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -147,10 +142,4 @@ footer .policies {
 footer .copyright {
   margin-left: 10rem;
   margin-top: 10px;
-}
-
-@media (max-width: 330) {
-  body {
-    background: #fff;
-  }
 }/*# sourceMappingURL=index.css.map */
