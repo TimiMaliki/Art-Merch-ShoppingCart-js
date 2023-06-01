@@ -1,4 +1,3 @@
-@import url(./breakpoints.scss);
 * {
   margin: 0;
   padding: 0;
@@ -10,6 +9,14 @@ body {
   height: 100vh;
   background: #000;
   color: #fff;
+}
+@media (max-width: 320px) {
+  body body {
+    background-color: red;
+  }
+  body nav {
+    visibility: hidden;
+  }
 }
 
 .search__input {
