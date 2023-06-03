@@ -4,7 +4,9 @@
 //   'desktop': 1024px,
 // );
 
-@import  '../scss/breakpoints.scss';
+@import  './media';
+@import  './config';
+@import  './utilities';
 
 $general_color: #000;
 
