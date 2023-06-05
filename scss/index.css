@@ -123,22 +123,24 @@ main .main_container {
 
 .container {
   width: 100%;
+  padding: 30px 250px;
 }
 @media (max-width: 340px) {
   .container {
     width: 100%;
+    padding: 243px 100px;
   }
 }
 @media (max-width: 668px) {
   .container {
     width: 100%;
-    padding: 240px 100px;
+    padding: 243px 100px;
   }
 }
 @media (max-width: 920px) {
   .container {
     width: 100%;
-    padding: 240px 100px;
+    padding: 243px 100px;
   }
 }
 .container .container_text {

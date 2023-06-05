@@ -123,21 +123,22 @@ main {
 
 .container {
     width: 100%;
+    padding: 30px 250px;
 
     @include smallMobile {
         width: 100%;
+        padding:243px 100px;
     }
 
     @include mediumMobile {
         width: 100%;
-      
-        padding:240px 100px;
+        padding:243px 100px;
     }
 
     @include largeMobile {
         width: 100%;
       
-        padding:240px 100px;
+        padding:243px 100px;
     }
    
  
