@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="./scss/index.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css"
         integrity="sha384-b6lVK+yci+bfDmaY1u0zE8YYJt0TZxLEAFyYSLHId4xoVvsrQu3INevFKo+Xir8e" crossorigin="anonymous">
+
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 <body>
@@ -48,11 +50,11 @@
     <div class="container">
 
         <div class="container_text">
-            <p class="right">Latest</p>
-            <p class="left">more</p>
+            <p class="right" data-aos="fade-right">Latest</p>
+            <p class="left" data-aos="fade-left">more</p>
         </div>
 
-        <div class="trend_col">
+        <div class="trend_col"  data-aos="fade-left"  data-aos-duration="3000"  data-aos-once="false">
 
             <div class="col">
                 <img src="./assets/img/latest_movies_imagies/Mask group.png" alt="">
@@ -131,11 +133,11 @@
     <div class="container">
 
         <div class="container_text">
-            <p class="right">BollyWood</p>
-            <p class="left">more</p>
+            <p class="right" data-aos="fade-right">BollyWood</p>
+            <p class="left" data-aos="fade-left">more</p>
         </div>
 
-        <div class="trend_col">
+        <div class="trend_col"  data-aos="fade-right" data-aos-duration="3000"  data-aos-once="false">
 
             <div class="col">
                 <img src="./assets/img/bollywood_imagies/Mask group.png" alt="">
@@ -226,11 +228,11 @@
     <div class="container">
 
         <div class="container_text">
-            <p class="right">HollyWood</p>
-            <p class="left">more</p>
+            <p class="right" data-aos="fade-right">HollyWood</p>
+            <p class="left" data-aos="fade-left">more</p>
         </div>
 
-        <div class="trend_col">
+        <div class="trend_col" data-aos="fade-left"data-aos-duration="3000"  data-aos-once="false" >
 
             <div class="col">
                 <img src="./assets/img/hollywood_imagies/Mask group.png" alt="">
@@ -320,11 +322,11 @@
     <div class="container">
 
         <div class="container_text">
-            <p>Series</p>
-            <p class="left">more</p>
+            <p class="right" data-aos="fade-right">Series</p>
+            <p class="left" data-aos="fade-left">more</p>
         </div>
 
-        <div class="trend_col">
+        <div class="trend_col"  data-aos="fade-right"data-aos-duration="3000"  data-aos-once="false">
 
             <div class="col">
                 <img src="./assets/img/webseries_imagies/Mask group.png" alt="">
@@ -415,11 +417,11 @@
     <div class="container">
 
         <div class="container_text">
-            <p class="right">Anime</p>
-            <p class="left">more</p>
+            <p class="right" data-aos="fade-right">Anime</p>
+            <p class="left" data-aos="fade-left">more</p>
         </div>
 
-        <div class="trend_col">
+        <div class="trend_col"  data-aos="fade-left" data-aos-duration="3000"  data-aos-once="false">
 
             <div class="col">
                 <img src="./assets/img/animes_imagies/Mask group.png" alt="">
@@ -505,7 +507,7 @@
     </div>
 
     <!-- footer -->
-    <footer>
+    <footer data-aos="fade-up" data-aos-duration="3000"  data-aos-once="false">
         <div class="socials">
             <i class="bi bi-facebook"></i>
             <i class="bi bi-instagram"></i>
@@ -526,7 +528,10 @@
     </footer>
 
 
-
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 
 </body>
 

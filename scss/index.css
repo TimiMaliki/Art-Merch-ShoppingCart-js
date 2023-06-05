@@ -130,7 +130,7 @@ main .main_container {
 
 .container {
   width: 100%;
-  padding: 30px 50px;
+  padding: 30px 250px;
 }
 @media (max-width: 340px) {
   .container {
