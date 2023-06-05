@@ -1,0 +1,18 @@
+@mixin smallMobile{
+@media (max-width:$smallMobile){
+ @content;
+   }
+}
+
+@mixin mediumMobile{
+@media (max-width:$mediumMobile){
+ @content;
+   }
+}
+
+
+@mixin largeMobile{
+@media (max-width:$largeMobile){
+ @content;
+   }
+}

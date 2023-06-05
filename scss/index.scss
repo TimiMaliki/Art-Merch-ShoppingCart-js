@@ -4,71 +4,40 @@
 //   'desktop': 1024px,
 // );
 
-@import  './media';
-@import  './config';
-@import  './utilities';
-
-$general_color: #000;
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+@import './media';
+@import './config';
+@import './utilities';
 
 body {
     width: 100%;
     height: 100vh;
     background: $general_color;
     color: #fff;
- 
-  @include media("<=phone"){
-    body{
-        background-color: blue;
-    }
-  }
+  
 }
 
-.search__input {
-    width: 45%;
-    height: 30px;
-    padding: 6px 11px;
-    margin-top: 10px;
-    border-radius: 4px;
-
-    background-color: #f4f4f4;
-    transition: transform 150ms ease-in-out;
-
-    &::placeholder {
-        color: color(#575756 a(0.8));
-        text-transform: uppercase;
-        letter-spacing: 1.5px;
-    }
-
-    // &:hover,
-    // &:focus {
-    //     padding: 2px 0;
-    //     outline: 0;
-    //     border: none;
-    //     border-bottom: 1px solid #575756;
-    //     border-radius: 0;
-    //     background-position: 100% center;
-    // }
-}
 nav {
+    width: 100%;
+    height: 20vh;
+    @include around;
 
-    display: flex;
-    justify-content: space-around;
-    
-   
 
+    @include smallMobile {
+        width: 100%;
+        display: none;
+    }
+
+    @include mediumMobile {
+        width: 100%;
+        display: none;
+    }
+  
     .logo {
         padding: 35px;
     }
 
     .right {
-        display: flex;
-        justify-content: space-between;
+        @include btw;
         padding: 25px;
         gap: 3rem;
 
@@ -79,7 +48,7 @@ nav {
             height: 25px;
             margin-top: 5px;
             padding: 20px;
-            transition: all  0.5s;
+            transition: all 0.5s;
 
             & p {
                 margin-top: -10px;
@@ -88,8 +57,8 @@ nav {
 
             &:hover {
                 background-color: rgb(240, 18, 240);
-                 transition: all ease-in-out 0.5s;
-                  
+                transition: all ease-in-out 0.5s;
+
             }
         }
 
@@ -105,7 +74,7 @@ nav {
     }
 
     ul {
-        display: flex;
+        @include flex;
         list-style: none;
         width: 50%;
 
@@ -122,79 +91,207 @@ nav {
         }
     }
 
-    
-    
+
+
+
 }
 
 main {
     .main_container {
-        background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../assets/img/background_imagies/Property\ 1=movie\ 2.png);
+        background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../assets/img/background_imagies/Property\ 1=movie\ 4.png);
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
         width: 100%;
         height: 500px;
+
+
+        @include smallMobile {
+            width: 117%;
+            height: 400px;
+            object-fit: cover;
+        }
+
+
     }
 
 }
 
-.latest {
+.container {
     width: 100%;
-    height: 70vh;
-    margin-top: 50px;
+    padding: 50px 90px;
 
-    .latest_text{
-        display: flex;
-        justify-content: space-evenly;
-        gap: 48rem;
+  
+    @include smallMobile {
+        width: 100%;
+        padding: 10px 5px;
+
+    }
+
+    @include mediumMobile {
+        width: 100%;
+        padding: 80px 10px;
+    }
+
+   
+ 
+    .container_text {
+        padding: 30px 20px;
+        @include btw;
         font-size: 21px;
         cursor: pointer;
+
+        @include smallMobile {
+            width: 100%;
+            margin-top: 210px;
+            font-size: 15px;
+            display: flex;
+            justify-content: space-between;
+
+
+            .left {
+                margin-left: 9rem;
+            }
+        }
+
+        @include mediumMobile {
+            width: 100%;
+            margin-top: 230px;
+            font-size: 15px;
+
+        }
+
+
+
+
     }
 
-    .trend_col{
+    .trend_col {
         width: 100%;
-        height: 40vh;
+        height: 70vh;
         margin-top: 50px;
         display: flex;
-        gap: 2rem;
-        
+        justify-content: center;
+        gap: 4rem;
 
-        .col{
-
-            padding: 0px 50px;
-        }
-        img{
+        @include smallMobile {
             width: 100%;
-            height: 170px;
+            display: grid;
+            grid-template-columns: 6fr 6fr;
+            padding: 10px 10px;
+            margin-bottom: 35px;
+            margin-left: 1.8rem;
+        
+        }
+
+        @include mediumMobile {
+            width: 100%;
+            display: grid;
+            grid-template-columns: 6fr 6fr;
+            padding: 45px;
+        }
+
+      
+
+        .col {
+            width: 200px;
+            height: 200px;
+
+            @include mediumMobile {
+                width: 100%;
+                margin-bottom: 55px;
+              
+            }
+
+            @include smallMobile {
+                width: 100%;
+                margin-bottom: 65px;
+    
+
+              
+
+
+                .col_text {
+
+
+                    @include smallMobile {
+                        font-size: 39px;
+                        width: 180px;
+                        height: 20px;
+                        transform: translateX(50px);
+
+                    }
+
+                    @include mediumMobile {
+                        font-size: 13px;
+                        width: 50px;
+                        height: 10px;
+                      
+                    }
+
+                  
+
+
+                }
+
+
+
+            }
+
+           
+        }
+
+        img {
+            width: 100%;
             border-radius: 8px;
             cursor: pointer;
+        
+
+            @include mediumMobile {
+                width: 150px;
+                height: 150px;
+                object-fit: cover;
+            }
+    
+
         }
     }
 }
 
-footer{
-    display: grid;
-     justify-content: center;
-     margin-top: 40vh;
-     margin-bottom: 9rem;
+footer {
+    @include smallMobile {
+        width: 100%;
+    }
 
-     .socials{
-        display: flex;
-        justify-content: space-between;
+    @include gridCenter;
+    margin-top: 40vh;
+    margin-bottom: 9rem;
+
+    .socials {
+        @include btw;
         cursor: pointer;
-     }
-     .policies{
-        display: flex;
+
+        @include smallMobile {
+            display: flex;
+            grid-template-columns: 2fr 2fr;
+            margin-left: 3rem
+        }
+    }
+
+    .policies {
+        @include flex;
         margin-top: 20px;
         gap: 4rem;
-     }
-     .copyright{
+
+        @include smallMobile {
+            display: flex;
+            grid-template-columns: 2fr 2fr;
+            margin-left: 3rem
+        }
+    }
+
+    .copyright {
         margin-left: 10rem;
         margin-top: 10px;
-     }
-} 
-
-
-
-
-
+    }
+}
