@@ -26,16 +26,31 @@
 
 body {
   width: 100%;
-  height: auto;
+  height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: center;
      object-position: center;
+  background: #000;
   color: #fff;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../assets/img/background_imagies/mesh-gradient.png);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
+}
+@media (max-width: 340px) {
+  body {
+    width: 100%;
+    height: auto;
+  }
+}
+@media (max-width: 668px) {
+  body {
+    width: 100%;
+    height: auto;
+  }
+}
+@media (max-width: 920px) {
+  body {
+    width: 100%;
+    height: auto;
+  }
 }
 
 nav {
@@ -117,7 +132,7 @@ main .main_container {
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
-  height: 500px;
+  height: 60vh;
 }
 @media (max-width: 340px) {
   main .main_container {
