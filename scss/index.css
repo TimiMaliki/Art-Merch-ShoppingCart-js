@@ -144,7 +144,7 @@ main .main_container {
   }
 }
 .container .container_text {
-  padding: 30px 20px;
+  padding: 10px 20px;
   display: flex;
   justify-content: space-between;
   font-size: 21px;
@@ -153,7 +153,6 @@ main .main_container {
 @media (max-width: 480px) {
   .container .container_text {
     width: 100%;
-    margin-top: 210px;
     font-size: 15px;
     display: flex;
     justify-content: space-between;
@@ -165,14 +164,12 @@ main .main_container {
 @media (max-width: 768px) {
   .container .container_text {
     width: 100%;
-    margin-top: 230px;
     font-size: 15px;
   }
 }
 @media (max-width: 1020px) {
   .container .container_text {
     width: 100%;
-    margin-top: 230px;
     font-size: 15px;
   }
 }
