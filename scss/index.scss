@@ -123,26 +123,22 @@ main {
 
 .container {
     width: 100%;
-    padding: 50px 90px;
-    margin-bottom: 80px;
 
-  
     @include smallMobile {
         width: 100%;
-        padding: 80px 5px;
-        margin-bottom: 80px;
+
     }
 
     @include mediumMobile {
         width: 100%;
-        padding: 80px 10px;
-        margin-bottom: 80px;
+      
+        padding:240px 100px;
     }
 
     @include largeMobile {
         width: 100%;
-        padding: 80px 40px;
-        margin-bottom: 80px;
+      
+        padding:240px 100px;
     }
    
  
@@ -157,11 +153,8 @@ main {
             font-size: 15px;
             display: flex;
             justify-content: space-between;
-
-
-            .left {
-                margin-left: 9rem;
-            }
+            gap: 9rem;        
+            transform: translateX(-30px);   
         }
 
         @include mediumMobile {
@@ -181,17 +174,15 @@ main {
     .trend_col {
         width: 100%;
         height: 70vh;
-        margin-top: 50px;
+        margin-top: 20px;
         display: flex;
         justify-content: center;
-        gap: 4rem;
+        gap: 2rem;
 
         @include smallMobile {
             width: 100%;
             display: grid;
             grid-template-columns: 6fr 6fr;
-            padding: 10px 10px;
-            margin-bottom: 75px;
             margin-left: 1.8rem;        
         }
 
@@ -199,7 +190,6 @@ main {
             width: 100%;
             display: grid;
             grid-template-columns: 6fr 6fr;
-            padding: 15px;
         }
 
         @include largeMobile {
@@ -216,18 +206,16 @@ main {
 
             @include mediumMobile {
                 width: 100%;
-                margin-bottom: 55px;
               
             }
             @include largeMobile {
                 width: 100%;
-                margin-bottom: 95px;
-              
+            
             }
 
             @include smallMobile {
                 width: 100%;
-                margin-bottom: 65px;
+
     
 
               
@@ -239,14 +227,13 @@ main {
                     @include smallMobile {
                         font-size: 19px;
                         width: 100%;
-                        height: 10px;
-                        transform: translateX(50px);
+                        padding: 10px;
                     }
 
                     @include mediumMobile {
-                        font-size: 13px;
-                        width: 50px;
-                        height: 10px;
+                        font-size: 19px;
+                        width: 100%;
+                        padding: 35px;
                       
                     }
 
@@ -284,12 +271,23 @@ main {
 }
 
 footer {
+    width: 100%;
+    height: 20vh;
+    margin-top: 40vh;
     @include smallMobile {
         width: 100%;
+        margin-top: 80px;
+    }
+    @include mediumMobile {
+        width: 100%;
+        margin-top: 80px;
+    }
+    @include largeMobile {
+        width: 100%;
+        margin-top: 80px;
     }
 
     @include gridCenter;
-    margin-top: 40vh;
     margin-bottom: 9rem;
 
     .socials {
