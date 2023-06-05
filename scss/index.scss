@@ -14,7 +14,7 @@ body {
     object-fit: cover;
     object-position: center;
     color: #fff;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../assets/img/background_imagies/12804207_5073414.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../assets/img/background_imagies/mesh-gradient.png);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -150,9 +150,26 @@ main {
     .container_text {
         padding: 10px 20px;
         @include btw;
-        font-size: 21px;
+        font-size: 29px;
         cursor: pointer;
+       
 
+        .right{
+            transition: all ease 0.5;
+            &:hover{
+                color: rgb(88, 2, 2);
+                transition: all ease-in-out 0.5s;
+           }
+        }
+
+        .left{
+            transition: all ease 0.5;
+            &:hover{
+                color: rgb(88, 2, 2);
+                transition: all ease-in-out 0.5s;
+           }
+        }
+       
         @include smallMobile {
             width: 100%;
             font-size: 15px;
@@ -163,6 +180,7 @@ main {
 
 
         }
+
 
         @include mediumMobile {
             width: 100%;

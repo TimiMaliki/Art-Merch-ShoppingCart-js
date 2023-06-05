@@ -32,7 +32,7 @@ body {
   -o-object-position: center;
      object-position: center;
   color: #fff;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../assets/img/background_imagies/12804207_5073414.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../assets/img/background_imagies/mesh-gradient.png);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -154,8 +154,22 @@ main .main_container {
   padding: 10px 20px;
   display: flex;
   justify-content: space-between;
-  font-size: 21px;
+  font-size: 29px;
   cursor: pointer;
+}
+.container .container_text .right {
+  transition: all ease 0.5;
+}
+.container .container_text .right:hover {
+  color: rgb(88, 2, 2);
+  transition: all ease-in-out 0.5s;
+}
+.container .container_text .left {
+  transition: all ease 0.5;
+}
+.container .container_text .left:hover {
+  color: rgb(88, 2, 2);
+  transition: all ease-in-out 0.5s;
 }
 @media (max-width: 340px) {
   .container .container_text {
