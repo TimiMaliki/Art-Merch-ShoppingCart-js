@@ -44,12 +44,14 @@ body {
   body {
     width: 100%;
     height: auto;
+    overflow-x: hidden;
   }
 }
 @media (max-width: 920px) {
   body {
     width: 100%;
     height: auto;
+    overflow-x: hidden;
   }
 }
 
@@ -60,7 +62,7 @@ body {
 [data-aos=new-animation].aos-animate {
   opacity: 1;
 }
-@media screen and (max-width: 508px) {
+@media screen and (min-width: 308px) {
   [data-aos=new-animation] {
     transform: translateX(150px);
   }

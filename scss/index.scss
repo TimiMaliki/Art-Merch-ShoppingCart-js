@@ -4,6 +4,7 @@
 //   'desktop': 1024px,
 // );
 
+
 @import './media';
 @import './config';
 @import './utilities';
@@ -27,10 +28,12 @@ body {
     @include mediumMobile {
         width: 100%;
         height: auto;
+        overflow-x: hidden;
     }
     @include largeMobile {
         width: 100%;
         height: auto;
+        overflow-x: hidden;
     }
 }
 [data-aos="new-animation"] {
@@ -41,7 +44,7 @@ body {
       opacity: 1;
     }
   
-    @media screen and (max-width: 508px) {
+    @media screen and (min-width: 308px) {
       transform: translateX(150px);
   
       &.aos-animate {
