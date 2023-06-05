@@ -126,7 +126,6 @@ main {
 
     @include smallMobile {
         width: 100%;
-
     }
 
     @include mediumMobile {
@@ -160,10 +159,14 @@ main {
         @include mediumMobile {
             width: 100%;
             font-size: 15px;
+            gap: 9rem;        
+            transform: translateX(-50px);  
         }
         @include largeMobile {
             width: 100%;
             font-size: 15px;
+            gap: 9rem;        
+            transform: translateX(-50px);  
         }
 
 
@@ -225,7 +228,7 @@ main {
 
 
                     @include smallMobile {
-                        font-size: 19px;
+                        font-size: 14px;
                         width: 100%;
                         padding: 10px;
                     }
