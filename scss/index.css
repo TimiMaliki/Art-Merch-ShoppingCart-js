@@ -123,7 +123,7 @@ main .main_container {
 
 .container {
   width: 100%;
-  padding: 30px 250px;
+  padding: 30px 50px;
 }
 @media (max-width: 340px) {
   .container {
@@ -223,20 +223,6 @@ main .main_container {
 @media (max-width: 340px) {
   .container .trend_col .col {
     width: 100%;
-  }
-}
-@media (max-width: 340px) and (max-width: 340px) {
-  .container .trend_col .col .col_text p {
-    font-size: 14px;
-    width: 100%;
-    padding: 10px;
-  }
-}
-@media (max-width: 340px) and (max-width: 668px) {
-  .container .trend_col .col .col_text p {
-    font-size: 15px;
-    width: 100%;
-    padding: 35px;
   }
 }
 .container .trend_col img {
