@@ -191,8 +191,9 @@ main {
             display: grid;
             grid-template-columns: 6fr 6fr;
             padding: 10px 10px;
-            margin-bottom: 35px;
+            margin-bottom: 75px;
             margin-left: 1.8rem;
+            border: 2px solid red;
         
         }
 
@@ -229,7 +230,7 @@ main {
 
             @include smallMobile {
                 width: 100%;
-                margin-bottom: 65px;
+                margin-bottom: 265px;
     
 
               
@@ -239,10 +240,10 @@ main {
 
 
                     @include smallMobile {
-                        font-size: 39px;
-                        width: 180px;
-                        height: 20px;
+                        font-size: 19px;
+                        width: 100%;
                         transform: translateX(50px);
+                        border: 2px solid red;
 
                     }
 
