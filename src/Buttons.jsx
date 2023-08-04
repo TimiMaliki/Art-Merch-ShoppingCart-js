@@ -11,5 +11,5 @@ const Buttons = ({ buttonText, reqType, setReqType }) => {
     </button>
   );
 };
-
+ 
 export default Buttons;

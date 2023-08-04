@@ -1,6 +1,6 @@
 import "./App.css";
 import Form from "./Form";
-import List from "./List";
+import Table from "./Table";
 import { useState, useEffect } from "react";
 
 
@@ -14,6 +14,7 @@ function App() {
       try {
         const response = await fetch(`${API_URL}${reqType}`);
         const data = await response.json();
+        console.log(data);
         setItems(data);
       } catch (err) {
       }
@@ -24,7 +25,7 @@ function App() {
   return (
     <div className="App">
       <Form reqType={reqType} setReqType={setReqType} />
-      <List items={items} />
+      <Table items={items} />
     </div>
   );
 }
