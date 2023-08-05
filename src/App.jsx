@@ -17,6 +17,8 @@ function App() {
         console.log(data);
         setItems(data);
       } catch (err) {
+
+        console.log('err');
       }
     };
 
