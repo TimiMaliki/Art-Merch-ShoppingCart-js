@@ -16,7 +16,7 @@ function App() {
         const data = await response.json();
         console.log(data);
         setItems(data);
-      } catch (err) {
+      } catch (error) {
 
         console.log('err');
       }
