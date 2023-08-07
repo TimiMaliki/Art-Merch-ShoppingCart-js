@@ -16,12 +16,12 @@ function App() {
         const data = await response.json();
         console.log(data);
         setItems(data);
-      } catch (error) {
+      } catch (err) {
 
         console.log('err');
       }
     };
-
+ 
     fetchItems();
   }, [reqType]);
   return (
